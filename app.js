@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 // app.use('/users', usersRouter)
 app.use('/books', booksRouter)
-// app.use('/best-selling-books', bestSellingBooks)
+app.use('/best-selling-books', bestSellingBooks)
 
 let newCategory = ''
 app.post('/books-category', async (req, res) => {
